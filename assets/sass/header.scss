@@ -1,0 +1,177 @@
+.n-header{
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: #EEEEEE;
+  &-top{
+    padding: 0 32px;
+    @media screen and (min-width: 768px) {
+      height: 72px;
+    }
+    @media screen and (max-width: 500px) {
+      padding: 7px 14px;
+    }
+    &-left{
+        a{
+          cursor: pointer;
+          height: inherit;
+          display: inherit;
+          align-items: inherit;
+          img{
+            width: auto;
+            @media screen and (min-width: 768px){
+              height: 50px;
+            }
+            @media screen and (max-width: 767px){
+              height:40px;
+            }
+          }
+        }
+    }
+    &-right{
+        &-cart{
+          a{
+            display: inline-block;
+            border-radius: 50%;
+            background: #fff;
+            line-height: 2;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            svg{
+              color: #5E5E5E;
+              height: 20px;
+              width: 20px;
+            }
+          }
+        }
+      &-market{
+        a{
+          @media screen and (min-width: 768px) {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 20px;
+            display: block;
+            padding: 0;
+            background: none;
+            box-shadow: 0 0 0 #000;
+            position: relative;
+            transition: none;
+            margin: 0;
+            text-align: center;
+            overflow: hidden;
+            z-index: 100;
+            background: #fff;
+
+          }
+          @media screen and (max-width: 767px) {
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+            border-radius: 16px;
+            display: block;
+            padding: 0;
+            background: none;
+            box-shadow: 0 0 0 #000;
+            position: relative;
+            transition: none;
+            margin: 0;
+            text-align: center;
+            overflow: hidden;
+            z-index: 100;
+            background: #fff;
+          }
+          img{
+            width: 56%;
+            height: auto;
+            vertical-align: middle;
+            object-fit: cover;
+            @media screen and (max-width: 767px) {
+              width: 16px;
+            }
+          }
+
+        }
+
+
+      }
+      &-search{
+        form{
+          height: 40px;
+          border-radius: 20px;
+          overflow: hidden;
+          position: relative;
+          display: flex;
+          align-items: center;
+          padding: 0 16px;
+          z-index: 110;
+          background: #fff;
+          color: #000;
+          border: 1px solid rgba(0,0,0,0.1);
+
+          @media screen and (max-width: 500px) {
+            max-width: 90%;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 20px;
+          }
+          input{
+            background: none;
+            border: 0;
+            font-family: inherit;
+            margin-bottom: 0;
+            padding: 0;
+            box-shadow: 0 0 0 #00000000;
+            outline: none;
+            width: 100%;
+            @media screen and (min-width: 768px) {
+            }
+          }
+          button{
+            position: absolute;
+            right: 4%;
+            font-family: inherit;
+            font-size: inherit;
+            background: transparent;
+            outline: none;
+            -webkit-appearance: none;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            -webkit-touch-callout: none;
+            -webkit-font-smoothing: antialiased;
+            padding: 0;
+            margin: 0;
+            border: 0;
+            list-style: none;
+            word-break: break-all;
+            &.p-form__searchSubmit{
+              width: 24px;
+              height: 24px;
+              svg{
+                color: #5E5E5E;
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+                -webkit-touch-callout: none;
+                -webkit-font-smoothing: antialiased;
+                padding: 0;
+                margin: 0;
+                border: 0;
+                list-style: none;
+                word-break: break-all;
+                width: inherit;
+                height: inherit;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
